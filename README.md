@@ -58,6 +58,7 @@ ai-driven-devops-workshop/
 ├── 05-rag-with-dev-docs/
 ├── 06-ci-integration/
 ├── 07-cli-agent-demo/
+├── 08-tool-execution/
 ├── assets/
 └── README.md
 ```
