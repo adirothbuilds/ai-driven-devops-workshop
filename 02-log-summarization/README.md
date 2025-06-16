@@ -1,33 +1,33 @@
-# 01 – LLM Basics
+# 02 – Log Summarization
 
-This module demonstrates how to interact with a Large Language Model (LLM) using Python for DevOps-related tasks.
+This module demonstrates how to use a Large Language Model (LLM) to summarize system logs for DevOps-related tasks.
 
 ---
 
 ## 🎯 Objective
 
-Help DevOps engineers with **no prior AI experience**:
+Help DevOps engineers:
 
-- Understand how LLMs like GPT work in basic scenarios
-- Make their first API call to a model
-- See practical examples like asking infrastructure questions
+- Quickly understand the key points in system logs
+- Identify errors, warnings, and important events
+- Automate log analysis using LLMs
 
 ---
 
 ## 📚 What You'll Learn
 
-- How to use the OpenAI API
-- What is a "prompt" and how to structure it for DevOps needs
-- First steps in integrating LLMs into internal tooling
+- How to use the OpenAI API for log summarization
+- How to integrate LLMs into log analysis workflows
 
 ---
 
 ## 📁 File Structure
 
 ```bash
-01-llm-basics/
-├── basic_prompt_call.py       # Simple CLI prompt interface to GPT
-├── .env.example               # Environment variable template
+02-log-summarization/
+├── summarize_log.py           # Script to summarize logs using LLM
+├── logs/                      # Directory containing sample logs
+│   └── sample.log             # Example log file
 └── README.md                  # This file
 ```
 
@@ -35,11 +35,10 @@ Help DevOps engineers with **no prior AI experience**:
 
 ## 🔧 Setup Instructions
 
-1. **Clone the repository**
+1. **Navigate to the directory**
 
 ```bash
-git clone https://github.com/adirothbuilds/ai-driven-devops-workshop.git
-cd ai-driven-devops-workshop/01-llm-basics
+cd ai-driven-devops-workshop/02-log-summarization
 ```
 
 2. **Create a virtual environment (optional but recommended):**
@@ -67,22 +66,22 @@ cp .env.example .env
 
 ## 🚀 Usage Examples
 
-### 🔹 basic_prompt_call.py
+### 🔹 summarize_log.py
 
 ```bash
-python basic_prompt_call.py
+python summarize_log.py /path/to/build.log
 ```
 
 Example input:
 
 ```bash
-What causes a Docker image to become bloated?
+/path/to/build.log
 ```
 
 Example output:
 
 ```bash
-Large Docker images often result from including unnecessary dependencies, not cleaning up cache layers, or using full base OS images instead of slim ones...
+The build log indicates that the process failed due to missing dependencies in step 3. Consider reviewing the dependency installation step.
 ```
 
 ---
@@ -103,4 +102,4 @@ Large Docker images often result from including unnecessary dependencies, not cl
 
 ---
 
-Happy prompting 👨‍💻🤖
+Happy summarizing 👨‍💻🤖

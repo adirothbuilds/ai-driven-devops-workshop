@@ -9,6 +9,7 @@
 This repository was created as part of an internal workshop to bring clarity and structure to the growing world of AI tools in the context of DevOps engineering.
 
 It is designed for **beginners** who want to:
+
 - Understand how AI and LLMs can be practically applied to DevOps workflows
 - Learn foundational concepts through clear, working demos
 - Explore real-world use cases (incident analysis, CI feedback, chatbot integrations, etc.)
@@ -19,6 +20,7 @@ It is designed for **beginners** who want to:
 ---
 
 ## 🎯 Goals
+
 - Introduce common DevOps processes where AI/LLMs can provide value
 - Present a practical, example-based learning environment
 - Demonstrate best practices in prompt design, inference orchestration, and automation flow
@@ -27,7 +29,9 @@ It is designed for **beginners** who want to:
 ---
 
 ## ⚠️ Disclaimer
+
 All code in this repository is intended for **demo purposes only**. While the examples are functional, they are:
+
 - Not security hardened
 - Not optimized for performance
 - Not tested at scale
@@ -39,6 +43,7 @@ Use these examples as inspiration and modify them before applying to production 
 ---
 
 ## 🧱 Folder Structure (Suggested)
+
 ```bash
 ai-driven-devops-workshop/
 ├── 01-llm-basics/
@@ -55,6 +60,7 @@ ai-driven-devops-workshop/
 ---
 
 ## 👥 Target Audience
+
 - DevOps engineers with minimal or no prior experience in AI
 - Platform engineers curious about LLM use cases
 - Anyone interested in automating infrastructure reasoning and decision making
@@ -62,6 +68,7 @@ ai-driven-devops-workshop/
 ---
 
 ## 🧠 Tech Stack (examples)
+
 - Python (OpenAI API, LangChain or similar)
 - Bash (for CI hooks and local integration)
 - GitHub Actions / Jenkins (as examples)
@@ -70,6 +77,7 @@ ai-driven-devops-workshop/
 ---
 
 ## 📢 Contribution
+
 This repository is maintained as part of an internal learning initiative. Contributions, improvements, and suggestions are welcome as long as they align with the spirit of education and clarity.
 
 ---

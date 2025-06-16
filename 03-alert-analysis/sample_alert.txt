@@ -1,0 +1,4 @@
+ALERT: Memory usage on production-node-2 exceeds 92% for 5 minutes.
+Current usage: 93.6%
+Threshold: 90%
+Severity: Critical

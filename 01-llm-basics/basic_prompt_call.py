@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-# Ensure the OpenAI API key is set
+# Initialize OpenAI client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def ask_gpt(prompt: str, model="gpt-3.5-turbo") -> str:
