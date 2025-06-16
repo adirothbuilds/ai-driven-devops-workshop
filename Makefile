@@ -32,15 +32,17 @@ step-03:
 	@echo "Running Step 03: Alert Analysis..."
 	python 03-alert-analysis/analyze_alert.py 03-alert-analysis/sample_alert.txt
 
-.PHONY: step-04
+.PHONY: step-04-01
 step-04-01:
 	@echo "Running Step 04-01: Prompt Engineering..."
 	python 04-prompt-engineering/01-direct-vs-system.py
 
+.PHONY: step-04-02
 step-04-02:
 	@echo "Running Step 04-02: Prompt Steering..."
 	python 04-prompt-engineering/02-steering-options.py
 
+.PHONY: step-04-03
 step-04-03:
 	@echo "Running Step 04-03: Prompt Ranking..."
 	python 04-prompt-engineering/03-ranked-prompt.py
