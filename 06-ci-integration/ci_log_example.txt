@@ -1,0 +1,6 @@
+[INFO] Running tests...
+[INFO] test_user_creation passed
+[INFO] test_login_with_wrong_password passed
+[ERROR] test_password_reset failed: AssertionError on line 52
+[INFO] Running post-test cleanup...
+[INFO] Build process complete with 1 test failure

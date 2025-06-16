@@ -37,30 +37,30 @@ Help DevOps engineers:
 
 1. **Navigate to the directory**
 
-```bash
-cd ai-driven-devops-workshop/02-log-summarization
-```
+    ```bash
+    cd ai-driven-devops-workshop/02-log-summarization
+    ```
 
 2. **Create a virtual environment (optional but recommended):**
 
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate    # Windows
-```
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # Linux/macOS
+    venv\Scripts\activate    # Windows
+    ```
 
 3. **Install dependencies:**
 
-```bash
-pip install openai python-dotenv
-```
+    ```bash
+    pip install openai python-dotenv
+    ```
 
 4. **Configure your API key:**
 
-```bash
-cp .env.example .env
-# then edit `.env` and add your OpenAI API key
-```
+    ```bash
+    cp .env.example .env
+    # then edit `.env` and add your OpenAI API key
+    ```
 
 ---
 
@@ -98,7 +98,7 @@ The build log indicates that the process failed due to missing dependencies in s
 
 - Use temperature=0.2–0.4 for more consistent answers
 - Think of a "prompt" as a clear question or instruction – write it like you're talking to a junior engineer
-- You can integrate this into Git hooks, CI steps, or Slack bots later
+- You can integrate this into Git hooks, CI steps, or bots later
 
 ---
 

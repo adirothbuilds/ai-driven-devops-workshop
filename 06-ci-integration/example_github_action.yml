@@ -1,0 +1,25 @@
+name: CI with AI Summary
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Run tests
+      run: |
+        echo "[INFO] Running tests..."
+        echo "[ERROR] test_login failed: AssertionError" > ci_log_example.txt
+
+    - name: Install dependencies
+      run: pip install openai python-dotenv
+
+    - name: Summarize CI log
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: python 06-ci-integration/summarize_ci_log.py ci_log_example.txt
