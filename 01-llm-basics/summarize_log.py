@@ -1,15 +1,15 @@
 # 01-llm-basics
 
 import os
-import openai
 import argparse
+from openai import OpenAI
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
 
 # Ensure the OpenAI API key is set
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def summarize_text(text: str, model="gpt-3.5-turbo", max_tokens=400) -> str:
     """
@@ -31,7 +31,7 @@ def summarize_text(text: str, model="gpt-3.5-turbo", max_tokens=400) -> str:
         "You are a DevOps assistant. Summarize the following system log clearly, "
         "highlighting errors, warnings, and any important events."
     )
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model=model,
         messages=[
             {"role": "system", "content": system_message},
@@ -40,7 +40,7 @@ def summarize_text(text: str, model="gpt-3.5-turbo", max_tokens=400) -> str:
         temperature=0.3,
         max_tokens=max_tokens
     )
-    return response['choices'][0]['message']['content'].strip()
+    return response.choices[0].message.content.strip()
 
 def read_file(file_path: str) -> str:
     """
