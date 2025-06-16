@@ -1,3 +1,8 @@
+---
+marp: true
+paginate: true
+---
+
 # 05 – RAG with Dev Docs
 
 In this module, we demonstrate how to apply **Retrieval-Augmented Generation (RAG)** to DevOps workflows by combining LLMs with relevant internal documentation.

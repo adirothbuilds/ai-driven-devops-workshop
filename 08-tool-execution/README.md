@@ -1,3 +1,8 @@
+---
+marp: true
+paginate: true
+---
+
 # 08 – Tool Execution: Dockerfile Generator Agent
 
 In this final section, we demonstrate how an LLM-based agent can **generate a valid Dockerfile** from a simple prompt and save it to disk.

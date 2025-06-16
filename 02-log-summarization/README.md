@@ -1,3 +1,8 @@
+---
+marp: true
+paginate: true
+---
+
 # 02 – Log Summarization
 
 This module demonstrates how to use a Large Language Model (LLM) to summarize system logs for DevOps-related tasks.

@@ -1,3 +1,8 @@
+---
+marp: true
+paginate: true
+---
+
 # 07 – CLI Agent Demo
 
 This module introduces a simple, single-file **AI DevOps agent** that runs from your terminal.

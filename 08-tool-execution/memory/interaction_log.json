@@ -1,10 +1,1 @@
-[
-  {
-    "input": "Flask app with gunicorn and requirements.txt",
-    "output": "```Dockerfile\n# Use official Python runtime as a parent image\nFROM python:3.8-slim\n\n# Set the working directory in the container\nWORKDIR /app\n\n# Copy the current directory contents into the container at /app\nCOPY . /app\n\n# Install any needed packages specified in requirements.txt\nRUN pip install --no-cache-dir -r requirements.txt\n\n# Expose the port gunicorn will listen on\nEXPOSE 8000\n\n# Define environment variable\nENV NAME World\n\n# Run gunicorn when the container launches\nCMD [\"gunicorn\", \"-b\", \"0.0.0.0:8000\", \"app:app\"]\n```"
-  },
-  {
-    "input": "Flask app with gunicorn and requirements.txt",
-    "output": "# Use a Python base image\nFROM python:3.9-slim\n\n# Set working directory\nWORKDIR /app\n\n# Copy the requirements file and install dependencies\nCOPY requirements.txt requirements.txt\nRUN pip install --no-cache-dir -r requirements.txt\n\n# Copy the Flask app code\nCOPY . .\n\n# Expose the Flask app port\nEXPOSE 5000\n\n# Run the Flask app with Gunicorn\nCMD [\"gunicorn\", \"-b\", \"0.0.0.0:5000\", \"app:app\"]"
-  }
-]
+[]

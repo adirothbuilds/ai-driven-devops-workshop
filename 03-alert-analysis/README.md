@@ -1,3 +1,8 @@
+---
+marp: true
+paginate: true
+---
+
 # 03 – Alert Analysis
 
 In this module, we demonstrate how to use an LLM to analyze DevOps-related alerts and generate human-readable summaries or explanations. This can be especially useful in:

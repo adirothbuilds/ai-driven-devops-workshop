@@ -1,3 +1,8 @@
+---
+marp: true
+paginate: true
+---
+
 # 06 – CI Integration
 
 In this module, we demonstrate how to connect an LLM into a CI process to enhance post-build visibility.

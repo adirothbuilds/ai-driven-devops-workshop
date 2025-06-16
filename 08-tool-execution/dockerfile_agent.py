@@ -13,9 +13,9 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Define file paths
-PROMPT_FILE = "prompts/system_prompt.txt"
-MEMORY_FILE = "memory/interaction_log.json"
-OUTPUT_FILE = "generated/Dockerfile"
+PROMPT_FILE = "08-tool-execution/prompts/system_prompt.txt"
+MEMORY_FILE = "08-tool-execution/memory/interaction_log.json"
+OUTPUT_FILE = "08-tool-execution/generated/Dockerfile"
 
 def load_system_prompt():
     """

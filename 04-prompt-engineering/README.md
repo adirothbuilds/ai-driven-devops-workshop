@@ -1,3 +1,8 @@
+---
+marp: true
+paginate: true
+---
+
 # 04 – Prompt Engineering
 
 This module explores the art and science of writing better prompts for LLMs (Large Language Models) in the context of DevOps automation.
