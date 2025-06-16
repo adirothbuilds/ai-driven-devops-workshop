@@ -1,8 +1,3 @@
----
-marp: true
-paginate: true
----
-
 # 01 – LLM Basics
 
 This module demonstrates how to interact with a Large Language Model (LLM) using Python for DevOps-related tasks.

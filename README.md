@@ -1,8 +1,3 @@
----
-marp: true
-paginate: true
----
-
 # AI-Driven DevOps Workshop
 
 > **Hands-on educational repo for DevOps engineers learning to integrate AI and LLMs into their workflows.**
