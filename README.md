@@ -41,12 +41,14 @@ Use these examples as inspiration and modify them before applying to production 
 ## 🧱 Folder Structure (Suggested)
 ```bash
 ai-driven-devops-workshop/
-├── 01-basic-llm-integration/       # Simple examples (call GPT via API, summarize logs)
-├── 02-rag-in-ci-processes/         # Retrieval-Augmented Generation for test/incident context
-├── 03-chatbot-devops-agent/        # Building an internal chatbot for dev teams
-├── 04-prompt-strategies/           # Prompt engineering patterns and tricks
-├── 05-self-healing-pipeline-demo/  # Experimental auto-remediation flow
-├── assets/                         # Images, diagrams, or prompt samples
+├── 01-llm-basics/
+├── 02-log-summarization/
+├── 03-alert-analysis/
+├── 04-prompt-engineering/
+├── 05-rag-with-dev-docs/
+├── 06-ci-integration/
+├── 07-cli-agent-demo/
+├── assets/
 └── README.md
 ```
 
