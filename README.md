@@ -4,6 +4,10 @@
 
 ---
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=adirothbuilds_ai-driven-devops-workshop&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=adirothbuilds_ai-driven-devops-workshop)
+
+---
+
 ## 📌 About This Repository
 
 This repository was created as part of an internal workshop to bring clarity and structure to the growing world of AI tools in the context of DevOps engineering.
