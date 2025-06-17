@@ -26,6 +26,7 @@ Integrate LLM analysis into CI/CD pipelines (Jenkins or GitHub Actions) to:
 06-ci-integration/
 ├── summarize_ci_log.py        # Script to be called from CI job
 ├── example_github_action.yml  # Demo GitHub Actions integration
+├── Jenkinsfile                # Demo jenkins pipeline integration
 ├── ci_log_example.txt         # Sample CI output log
 ├── .env.example               # API key + optional email creds
 └── README.md
