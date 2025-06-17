@@ -116,4 +116,15 @@ color: #333
 
 ---
 
+## 09 – LangChain Basic Agent
+
+### Build LangChain agents to:
+
+- 🔧 Route prompts to tools with reasoning
+- 🧠 Use function-calling logic with LLMs
+- 🤝 Combine natural language input with real actions
+- 🛠️ Integrate simple Python tools into AI workflows
+
+---
+
 # 🚀 Let's Get Started

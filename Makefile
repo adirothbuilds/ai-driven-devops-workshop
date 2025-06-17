@@ -66,3 +66,8 @@ step-07:
 step-08:
 	@echo "Running Step 08: Tool Execution..."
 	python 08-tool-execution/dockerfile_agent.py
+
+.PHONY: step-09
+step-08:
+	@echo "Running Step 09: langchain basic..."
+	python 09-langchain-basic/agent_chain.py
