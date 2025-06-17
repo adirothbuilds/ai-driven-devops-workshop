@@ -54,7 +54,10 @@ ai-driven-devops-workshop/
 ├── 06-ci-integration/
 ├── 07-cli-agent-demo/
 ├── 08-tool-execution/
-├── assets/
+├── Makefile
+├── presentation.md
+├── requirements.txt
+├── slides.html
 └── README.md
 ```
 
