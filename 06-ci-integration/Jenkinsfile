@@ -1,0 +1,46 @@
+/* groovylint-disable NestedBlockDepth */
+pipeline {
+    agent {
+        label 'linux'  // Assuming this label matches a Linux agent with Docker installed
+    }
+
+    environment {
+        OPENAI_API_KEY = credentials('openai-api-key')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                sh '''
+                    echo "[INFO] Running tests..."
+                    echo "[ERROR] test_login failed: AssertionError" > ci_log_example.txt
+                '''
+            }
+        }
+
+        stage('Summarize Logs with AI in Docker') {
+            steps {
+                script {
+                    docker.image('python:3.10-slim').inside {
+                        sh '''
+                            pip install --no-cache-dir openai python-dotenv
+                            python 06-ci-integration/summarize_ci_log.py ci_log_example.txt
+                        '''
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            echo '✅ CI with AI Summary (Docker-based) completed.'
+        }
+    }
+}
