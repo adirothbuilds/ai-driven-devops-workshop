@@ -44,7 +44,7 @@ Use these examples as inspiration and modify them before applying to production 
 
 ---
 
-## 🧱 Folder Structure (Suggested)
+## 🧱 Folder Structure
 
 ```bash
 ai-driven-devops-workshop/
@@ -58,9 +58,7 @@ ai-driven-devops-workshop/
 ├── 08-tool-execution/
 ├── 09-langchain-basic/
 ├── Makefile
-├── presentation.md
 ├── requirements.txt
-├── slides.html
 └── README.md
 ```
 
