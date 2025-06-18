@@ -1,8 +1,13 @@
 # AI-Driven DevOps Workshop
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=adirothbuilds_ai-driven-devops-workshop&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=adirothbuilds_ai-driven-devops-workshop)
 ![Python](https://img.shields.io/badge/language-python-blue)
 ![Built with LangChain](https://img.shields.io/badge/langchain-agent-yellow)
+![n8n](https://img.shields.io/badge/integrates-n8n-orange)
+![AI Agent](https://img.shields.io/badge/agent-AI%20tooling-brightgreen)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=adirothbuilds_ai-driven-devops-workshop&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=adirothbuilds_ai-driven-devops-workshop)
+![Status](https://img.shields.io/badge/status-educational-lightgrey)
+![License](https://img.shields.io/github/license/adirothbuilds/ai-driven-devops-workshop)
+![Beginner Friendly](https://img.shields.io/badge/level-beginner-success)
 
 > **Hands-on educational repo for DevOps engineers learning to integrate AI and LLMs into their workflows.**
 
