@@ -1,6 +1,8 @@
 # AI-Driven DevOps Workshop
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=adirothbuilds_ai-driven-devops-workshop&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=adirothbuilds_ai-driven-devops-workshop)
+![Python](https://img.shields.io/badge/language-python-blue)
+![Built with LangChain](https://img.shields.io/badge/langchain-agent-yellow)
 
 > **Hands-on educational repo for DevOps engineers learning to integrate AI and LLMs into their workflows.**
 
